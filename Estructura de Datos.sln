@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreandoArbol", "CreandoArbo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recorrido de Arboles", "Recorrido de Arboles\Recorrido de Arboles.csproj", "{BB93199C-517D-4D70-9D78-3DFB3E8524D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArbolAscendencia", "ArbolAscendencia\ArbolAscendencia.csproj", "{50799FC5-A810-40CA-8592-388F64D449C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BB93199C-517D-4D70-9D78-3DFB3E8524D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB93199C-517D-4D70-9D78-3DFB3E8524D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB93199C-517D-4D70-9D78-3DFB3E8524D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50799FC5-A810-40CA-8592-388F64D449C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50799FC5-A810-40CA-8592-388F64D449C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50799FC5-A810-40CA-8592-388F64D449C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50799FC5-A810-40CA-8592-388F64D449C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
