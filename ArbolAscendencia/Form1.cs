@@ -12,27 +12,51 @@ namespace ArbolAscendencia
 {
     public partial class Form1 : Form
     {
-
-        TreeNode treeNode = new TreeNode();
-
+        int generaciones = 0;
+        int contador = 0;
+        
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
 
             Generar();
+            treeView1.ExpandAll();
+            
+
         }
 
         private void Generar()
         {
             treeView1.Nodes.Add("Edgar Barnett");
+            generaciones = Convert.ToInt16(txtGeneraciones.Text);
+            
+            //Manda llamar funcion
+            CrearArbol(treeView1.Nodes[0],contador,generaciones);
+        }
+
+        private void CrearArbol(TreeNode node, int contador,int generaciones)
+        {
+            contador++;
+            node.Nodes.Add("node" + contador);
+
+            if (contador < generaciones)
+            {
+                CrearArbol(node.Nodes[0], contador, generaciones);
+            }
 
 
-
-            treeView1.ExpandAll();
+            //se brinca al siguiente subhijo de la raiz
+            node.Nodes.Add("node" + contador);
+            if (contador < generaciones)
+            {
+                CrearArbol(node.Nodes[1], contador, generaciones);
+            }
+            return;
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
