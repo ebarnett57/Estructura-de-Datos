@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRaiz = new System.Windows.Forms.TextBox();
             this.lblRaiz = new System.Windows.Forms.Label();
             this.lblPadre = new System.Windows.Forms.Label();
             this.lblHijo = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtHijo = new System.Windows.Forms.TextBox();
             this.cbPadre = new System.Windows.Forms.ComboBox();
             this.btnRaiz = new System.Windows.Forms.Button();
             this.btnHijo = new System.Windows.Forms.Button();
@@ -51,12 +51,12 @@
             this.treeView1.Size = new System.Drawing.Size(472, 438);
             this.treeView1.TabIndex = 0;
             // 
-            // textBox1
+            // txtRaiz
             // 
-            this.textBox1.Location = new System.Drawing.Point(519, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtRaiz.Location = new System.Drawing.Point(519, 12);
+            this.txtRaiz.Name = "txtRaiz";
+            this.txtRaiz.Size = new System.Drawing.Size(100, 20);
+            this.txtRaiz.TabIndex = 1;
             // 
             // lblRaiz
             // 
@@ -85,12 +85,12 @@
             this.lblHijo.TabIndex = 5;
             this.lblHijo.Text = "Hijo";
             // 
-            // textBox3
+            // txtHijo
             // 
-            this.textBox3.Location = new System.Drawing.Point(688, 56);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtHijo.Location = new System.Drawing.Point(688, 56);
+            this.txtHijo.Name = "txtHijo";
+            this.txtHijo.Size = new System.Drawing.Size(100, 20);
+            this.txtHijo.TabIndex = 6;
             // 
             // cbPadre
             // 
@@ -108,6 +108,7 @@
             this.btnRaiz.TabIndex = 8;
             this.btnRaiz.Text = "Add";
             this.btnRaiz.UseVisualStyleBackColor = true;
+            this.btnRaiz.Click += new System.EventHandler(this.btnRaiz_Click);
             // 
             // btnHijo
             // 
@@ -115,7 +116,7 @@
             this.btnHijo.Name = "btnHijo";
             this.btnHijo.Size = new System.Drawing.Size(75, 23);
             this.btnHijo.TabIndex = 9;
-            this.btnHijo.Text = "button2";
+            this.btnHijo.Text = "Add Hijo";
             this.btnHijo.UseVisualStyleBackColor = true;
             // 
             // btnExpand
@@ -126,6 +127,7 @@
             this.btnExpand.TabIndex = 10;
             this.btnExpand.Text = "Expand";
             this.btnExpand.UseVisualStyleBackColor = true;
+            this.btnExpand.Click += new System.EventHandler(this.btnExpand_Click);
             // 
             // btnRecorrido
             // 
@@ -135,6 +137,7 @@
             this.btnRecorrido.TabIndex = 11;
             this.btnRecorrido.Text = "Recorrido";
             this.btnRecorrido.UseVisualStyleBackColor = true;
+            this.btnRecorrido.Click += new System.EventHandler(this.btnRecorrido_Click);
             // 
             // btnColapse
             // 
@@ -144,6 +147,7 @@
             this.btnColapse.TabIndex = 12;
             this.btnColapse.Text = "Colapse";
             this.btnColapse.UseVisualStyleBackColor = true;
+            this.btnColapse.Click += new System.EventHandler(this.btnColapse_Click);
             // 
             // btnEjemplo
             // 
@@ -153,6 +157,7 @@
             this.btnEjemplo.TabIndex = 13;
             this.btnEjemplo.Text = "Ejemplo";
             this.btnEjemplo.UseVisualStyleBackColor = true;
+            this.btnEjemplo.Click += new System.EventHandler(this.btnEjemplo_Click);
             // 
             // btnLimpiar
             // 
@@ -162,6 +167,7 @@
             this.btnLimpiar.TabIndex = 14;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // Form1
             // 
@@ -176,11 +182,11 @@
             this.Controls.Add(this.btnHijo);
             this.Controls.Add(this.btnRaiz);
             this.Controls.Add(this.cbPadre);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtHijo);
             this.Controls.Add(this.lblHijo);
             this.Controls.Add(this.lblPadre);
             this.Controls.Add(this.lblRaiz);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtRaiz);
             this.Controls.Add(this.treeView1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -192,11 +198,11 @@
         #endregion
 
         private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRaiz;
         private System.Windows.Forms.Label lblRaiz;
         private System.Windows.Forms.Label lblPadre;
         private System.Windows.Forms.Label lblHijo;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtHijo;
         private System.Windows.Forms.ComboBox cbPadre;
         private System.Windows.Forms.Button btnRaiz;
         private System.Windows.Forms.Button btnHijo;
